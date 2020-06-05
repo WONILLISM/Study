@@ -8,3 +8,7 @@ myvenv
 db.sqlite3
 /static
 .DS_Store
+
+### chrome_app_with_vanilla_JS
+*.Identifier
+*.json
