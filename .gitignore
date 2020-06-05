@@ -1,4 +1,7 @@
 *.zip
+.vs
+.vscode
+
 
 ### djangogirls
 *.pyc
