@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    Remote Jobs
+    </title>
+    <style></style>
+</head>
+
+<body>
+  <header>
+    <h1>Remote Jobs</h1>
+    <h3>{{num_of_jobs}} {{job_name}} jobs found.</h3>    
+    <a href="/">&larr; Go back</a>
+  </header>
+  <main>
+    {% for job in jobs %}
+      <h3>{{job['title']}}</h3>
+      <h4>{{job['company']}}</h4>
+      <a href="{{job['link']}}">Apply</a>
+      
+    {% endfor %}
+  </main>
+</body>
+
+</html>
