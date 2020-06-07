@@ -1,0 +1,38 @@
+header a:link{color: white;}
+header a:hover{color: white;}
+header a:visited{color: white;}
+header a:active{color: white;}
+.page-title{
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+}
+.page-title span{
+    padding: 2px;
+    color: blue;
+}
+
+input[type="search"] {
+    background-color: #F1F3F4;
+    font-size: 0.875rem;
+    padding: 0.5em 1em;
+    padding-right: 0.75em;
+    border-radius: 1.25em;
+    border: 0;
+    width: 20em;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-appearance: none;
+    appearance: none
+}
+input[type="search"]:hover {
+    background-color: #e3e7e9
+}
+input[type="search"]:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.15em #ea4c89;
+    background-color: #fff
+}
+.search{
+
+}

@@ -7,7 +7,7 @@ https://remoteok.io/remote-dev+python-jobs
 
 Good luck!
 """
-
+import csv
 import requests
 from bs4 import BeautifulSoup
 
@@ -82,6 +82,14 @@ def results_jobs(job_name):
     jobs+=scrape_RO(RO_url)
 
     return jobs
+
+def save_csv(jobs, job_name):
+    file = open(f"static/csv/jobs.csv", mode="w")
+    writer = csv.writer(file)
+    writer.writerow(["compny","title","link"])
+    for i in jobs:
+        writer.writerow([i['company'],i['title'],i['link']])
+    return
 
 
 
