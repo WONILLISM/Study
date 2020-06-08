@@ -7,7 +7,6 @@ https://remoteok.io/remote-dev+python-jobs
 
 Good luck!
 """
-
 from flask import Flask, render_template, request, redirect, send_file
 from src.scrapper import results_jobs, save_csv
 
@@ -34,5 +33,4 @@ def download():
     as_attachment=True
   )
 
-app.run(host="0.0.0.0",debug=True)
-
+app.run(host="0.0.0.0",port=5002,debug=True)

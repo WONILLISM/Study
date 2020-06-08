@@ -5,21 +5,47 @@
     <title>
     Remote Jobs
     </title>
-    <style></style>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/init.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/home.css') }}">
+    <link rel="stylesheet" href="../static/css/init.css">
+    <link rel="stylesheet" href="../static/css/search.css">
 </head>
 
 <body>
   <header>
-    <h1>Remote Jobs</h1>
-    <h3>{{num_of_jobs}} {{job_name}} jobs found.</h3>    
-    <p><a href="/download" download>Export to CSV</a></p>
-    <p><a href="/">&larr; Go back</a></p>
+    <a href="/" style='text-decoration: none;'>
+      <div class="page-title">
+        <span>r</span>
+        <span>e</span>
+        <span>m</span>
+        <span>o</span>
+        <span>t</span>
+        <span>e</span>
+        <span>_</span>
+        <span>j</span>
+        <span>o</span>
+        <span>b</span>
+        <span>s</span>
+      </div> 
+    </a> 
+    <div class="found">
+      <span>{{num_of_jobs}}</span>  
+      <span>{{job_name}}</span> 
+      <span>jobs found.</span>    
+    </div>
+
+    <div class="menu">
+      <span><a href="/download" download>Export to CSV</a></span>
+      <span><a href="/">&larr; Go back</a></span>
+    </div>
   </header>
   <main>
     {% for job in jobs %}
-      <h3>{{job['title']}}</h3>
-      <h4>{{job['company']}}</h4>
-      <a href="{{job['link']}}">Apply</a>
+      <article>
+        <div class="title">{{job['title']}}</div>
+        <div class="company">{{job['company']}}</div>
+        <div calss="link"><a href="{{job['link']}}">apply</a></div>
+      </article>
     {% endfor %}
   </main>
 </body>

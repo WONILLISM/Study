@@ -1,0 +1,120 @@
+header{
+    padding-top: 60px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header a:link{color: white;}
+header a:hover{color: white;}
+header a:visited{color: white;}
+header a:active{color: white;}
+.page-title{
+    margin: 0 auto;
+    padding-bottom: 50px;
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+}
+.page-title span{
+    padding: 2.5px;
+}
+.page-title span:nth-child(1){
+    color:#F2B705;
+}
+.page-title span:nth-child(2){
+    color: #8372F2;
+}
+.page-title span:nth-child(3){
+    color:#F28705;
+}
+.page-title span:nth-child(4){
+    color:#614BF2;
+}
+.page-title span:nth-child(5){
+    color:#BF0404;
+}
+.page-title span:nth-child(6){
+    color:#F2B705;
+}
+.page-title span:nth-child(7){
+    color:#8372F2;
+}
+.page-title span:nth-child(8){
+    color:#F28705;
+}
+.page-title span:nth-child(9){
+    color:#614BF2;
+}
+.page-title span:nth-child(10){
+    color:#BF0404;
+}
+.page-title span:nth-child(11){
+    color:#F2B705;
+}
+
+.found{
+    padding-bottom: 20px;
+}
+.found span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.found span:nth-child(1){
+    color: #8372F2;   
+}
+.found span:nth-child(2){
+    color: #F2B705;   
+}
+.menu span{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0.2em 0.5em;
+    padding-right: 0.5em;
+    border-radius: 0.2em;
+    border: 0;
+}
+.menu span:nth-child(1) {
+    color: white;
+    background-color: #614BF2;
+}
+.menu span:nth-child(2) {
+    color: white;
+    background-color: #BF0404;
+}
+span a{
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main article{
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 80%;
+    background: #0D1618;
+    box-shadow: 5px 5px 5px black;  
+    display: flex;
+    flex-direction: column;
+}
+main article .title{
+    color: #F2B705;
+    font-size: 18px;
+    font-weight: bold;
+}
+article div{
+    margin: 10px;
+    background-color: #0D1618;
+}
+article a{
+    text-decoration: none;
+    color: #BF0404;
+    font-weight: bolder;
+}
+

@@ -7,6 +7,8 @@
     </title>
     <link rel="stylesheet" href="{{ url_for('static',filename='css/init.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='css/home.css') }}">
+    <link rel="stylesheet" href="../static/css/init.css">
+    <link rel="stylesheet" href="../static/css/home.css">
 </head>
 
 <body>
@@ -26,16 +28,15 @@
         <span>s</span>
       </div> 
     </a>  
-  </header>
-  <main>
     <article>
-      <form action="/search" method="post" class="search">
-        <h4>Search by term:</h4>
-        <input placeholder="i.e python" required name="job_name" />
-        <button type="submit">Find my job</button>
+      <span>search by term</span>
+      <form class="term-form" action="/search" method="post" >
+        <input placeholder="i.e python" required name="job_name" type="search"/>
+        <button class="search" type="submit"><span>go!</span></button>
+        
       </form>
     </article>
-  </main>
+  </header>
 </body>
 
 </html>
