@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css">
+  </head>
+
+  <body>
+    <header>
+        <h1 class="title">
+            Random Number Game
+        </h1>
+    </header>
+    <main>
+        <h3 class="js-textRange"></h3>
+        <form class="js-gameForm">
+            <div class="range-container">
+                <div>
+                    <span class="range-min">0</span>
+                    <span class="range-max">100</span>
+                </div>  
+                <input name="rangeHandler" type="range" min="0" max="100" step="1" value="0" class="rightRange" oninput="getRangeValue()">
+            </div>
+            <div>
+                <span>Guess the number: </span>
+                <input name="num" type="number" placeholder="Input num">
+                <input name="btn" type="button" value="Play!" onclick="inputBtnOnClick()">
+            </div>
+        </form>
+        <div class="js-result">
+            <div></div>
+            <div></div>
+        </div>
+    </main>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

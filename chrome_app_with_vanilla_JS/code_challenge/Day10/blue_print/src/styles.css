@@ -1,0 +1,19 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.range-container{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.range-container div{
+    display: flex;
+    justify-content: space-between;
+}
+input[type=range]{
+    width: 90%;
+    cursor: grab;
+}
+  
