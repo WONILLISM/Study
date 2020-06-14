@@ -3,11 +3,13 @@ const weather =document.querySelector(".js-weather");
 const API_KEY = "5fa0d397a4ab233741183e0a05278b3d";
 const COORDS = 'coords';
 
-function getWeather(letitude, longitude){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${letitude}&lon=${longitude}&appid=${API_KEY}&units=metric`)
+function getWeather(lat, lon){
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`)
+    
     .then((response)=>{
         return response.json();
     }).then((json)=>{
+        console.log(json);
         const temperature = Math.round(parseFloat(json.main.temp)) + "℃";
         const place = json.name;
         weather.innerText = `${temperature} @ ${place}`;
