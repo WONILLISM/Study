@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Challenge</title>
+    <link type="text/css" rel="stylesheet" href="src/stylesheets/init.css">
+    <link type="text/css" rel="stylesheet" href="src/stylesheets/todo.css">
+</head>
+
+<body>
+    <header>
+        <div class="statement"></div>
+    </header>
+    <main>
+        <div class="now-container">
+            <span></span>
+            <span></span>
+            <span class="js-weather"></span>
+        </div>
+        <form id="js-form">
+            <input type="text" placeholder="Add task" />
+        </form>
+        <div class="toDo-container">
+            <div>
+                <h3>Pending</h3>
+                <ul id="js-pending"></ul>
+            </div>
+            <div>
+                <h3>Finished</h3>
+                <ul id="js-finished"></ul>
+            </div>
+        </div>
+        
+    </main>
+</body>
+<script type="module" src="src/javascripts/index.js"></script>
+
+</html>

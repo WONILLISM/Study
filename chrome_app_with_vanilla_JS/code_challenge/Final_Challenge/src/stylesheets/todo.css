@@ -1,0 +1,70 @@
+.now-container{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 5rem;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px #FAC22B;   
+
+    color: #603E95;
+    letter-spacing: 7px;
+}
+.now-container span:nth-child(1){
+    font-size: 5rem;
+}
+.now-container span:nth-child(2){
+    font-size: 2rem;
+}
+.toDo-container{
+    margin-top: 2rem;
+    width: 50%;
+    max-height: 50vh;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    border-radius: 1em;
+
+    overflow-y: scroll;
+}
+.toDo-container::-webkit-scrollbar{
+    display: none;
+}
+.toDo-container h3{
+    margin-left: 1rem;
+    font-size: 1.4rem;
+}
+.toDo-container li{
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+.toDo-container  button{
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0.5rem;
+}
+
+input[type="text"] {
+    background-color: rgba(200,200,250,0.5);
+    font-size: 0.875rem;
+    padding: 0.5em 1em;
+    padding-right: 0.75em;
+    border-radius: 1.25em;
+    border: 0;
+    width: 20em;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-appearance: none;
+    appearance: none
+}
+input[type="text"]:hover {
+    background-color: #e3e7e9
+}
+input[type="text"]:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.15em #603E95;
+    background-color: #fff
+}
+input[type="text"]::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.35)
+}
