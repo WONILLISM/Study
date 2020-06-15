@@ -5,6 +5,8 @@ export default class Now{
     }
     
     today(){
+        //console.log(this.date);
+        //Mon Jun 15 2020 22:45:41 GMT+0900 (대한민국 표준시)
         let y = this.date.getFullYear();
         let m = this.date.getMonth();
         let d = this.date.getDate();
@@ -40,6 +42,7 @@ export default class Now{
     }
     display(date){
         this.date = new Date();
+        
         this.nowContainer.childNodes[1].innerText = this.today();
         this.nowContainer.childNodes[3].innerText = this.clock();
     }
