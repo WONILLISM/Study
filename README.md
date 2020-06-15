@@ -1,6 +1,6 @@
 # Study
 
-## 1. Djago tutorial (with djangogirls)
+## 1. Django tutorial (with djangogirls)
 
 reference : https://tutorial.djangogirls.org/ko/  
 
